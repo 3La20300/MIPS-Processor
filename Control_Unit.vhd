@@ -14,24 +14,11 @@ entity Control_Unit
     reset: in std_logic := '0';
     clk: in std_logic
   );
-end Control_Unit
-;
+end Control_Unit;
 
 architecture Control_arch of Control_Unit
  is
-
-    
-  -- component register_file
-	-- port 
-	-- (
-	-- 	instruc: in std_logic_vector(15 downto 0);
-	-- 	E   : in  std_logic;
-	-- 	INP : in std_logic_vector (15 downto 0);
-	-- 	OT_rs: inout std_logic_vector( 15 downto 0);
-	-- 	OT_rt: inout std_logic_vector( 15 downto 0)
-	-- );
-  -- end component;
-  
+	
   component ROM
   port ( A : in std_logic_vector(3 downto 0); 
   CE : in std_logic;  
